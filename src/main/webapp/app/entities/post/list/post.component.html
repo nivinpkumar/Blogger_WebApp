@@ -34,7 +34,7 @@
         <a [routerLink]="['/post', post.id, 'view']" data-cy="entityDetailsButton">
           <h2>{{ post.title }}</h2>
         </a>
-        <small>Posted on {{ post.date | formatMediumDatetime }} by {{ post.blog?.user?.login }}</small>
+        <small>Posted on {{ post.date | formatMediumDatetime }}</small>
         <div [innerHTML]="post.content"></div>
         <div class="btn-group mb-2 mt-1">
           <button type="submit" [routerLink]="['/post', post.id, 'edit']" class="btn btn-primary btn-sm">
